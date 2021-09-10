@@ -1,6 +1,8 @@
 {
   "recommendations": [
     "bradlc.vscode-tailwindcss",
-    "csstools.postcss"
+    "csstools.postcss",
+    "joshbolduc.story-explorer",
+    "kavod-io.vscode-jest-test-adapter"
   ]
 }

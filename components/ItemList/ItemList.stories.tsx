@@ -7,12 +7,19 @@ export default {
 } as ComponentMeta<typeof ItemList>
 
 const IMG = 'https://via.placeholder.com/150'
-const MOCK_DATA = [
-  { id: 1, title: 'Item 1', image: IMG, onClick: jest.fn() },
-  { id: 2, title: 'Item 2', image: IMG, onClick: jest.fn() },
-  { id: 3, title: 'Item 3', image: IMG, onClick: jest.fn() },
-  { id: 4, title: 'Item 4', image: IMG, onClick: jest.fn() },
+let MOCK_DATA = [
+  { id: 1, title: 'Item 1', image: IMG },
+  { id: 2, title: 'Item 2', image: IMG },
+  { id: 3, title: 'Item 3', image: IMG },
+  { id: 4, title: 'Item 4', image: IMG },
 ]
+
+if (jest) MOCK_DATA = MOCK_DATA.map(data => {
+  return {
+    ...data,
+    onClick: jest.fn()
+  }
+})
 
 const Template: ComponentStory<typeof ItemList> = (args) => <ItemList {...args} />
 

@@ -6,18 +6,22 @@ interface ItemCardProps {
   size?: 'small' | 'medium' | 'large'
   title: string
   img: string
+  desc?: string
 }
 
 export const ItemCard: React.FC<ItemCardProps> = ({
   title,
   img,
+  desc,
   size = 'medium',
   primary = false,
 }) => {
   return (
     <div>
       <Image alt={title} src={img} height={150} width={150} />
+
       <p>{title}</p>
+      { desc && <p data-testid='itemcard-desc'>{desc}</p>}
     </div>
   )
 }

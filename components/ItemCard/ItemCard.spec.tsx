@@ -20,4 +20,21 @@ describe('Item Card Component', () => {
     const image = screen.getByAltText(title)
     expect(image).toBeInTheDocument()
   })
+
+  it('should not display a description', () => {
+    render(<Component />)
+    const text = screen.queryByTestId('itemcard-desc')
+    expect(text).not.toBeInTheDocument()
+  })
+
+  describe('Descriptive Varient', () => {
+    const Component = ItemCard.Descriptive
+
+    it('should have a description', () => {
+      render(<Component />)
+      const desc = Component.args!.desc
+      const text = screen.getByText(desc)
+      expect(text).toBeInTheDocument()
+    })
+  })
 })

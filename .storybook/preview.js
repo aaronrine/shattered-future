@@ -1,5 +1,8 @@
 import 'tailwindcss/tailwind.css'
+import jest from 'jest-mock'
 import * as nextImage from 'next/image';
+
+window.jest = jest
 
 Object.defineProperty(nextImage, 'default', {
   configurable: true,

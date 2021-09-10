@@ -9,32 +9,19 @@
     "lint": "next lint",
     "test": "jest --watch",
     "test:all": "jest --watchAll",
-    "test:cov": "jest --coverage",
-    "storybook": "start-storybook -p 6006 --ci --no-manager-cache",
-    "storybook:build": "build-storybook"
+    "test:cov": "jest --coverage"
   },
   "dependencies": {
-    "autoprefixer": "^10.3.4",
     "next": "11.1.2",
-    "postcss": "^8.3.6",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "swr": "^1.0.0",
-    "tailwindcss": "^2.2.14"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@storybook/addon-actions": "^6.3.8",
-    "@storybook/addon-essentials": "^6.3.8",
-    "@storybook/addon-links": "^6.3.8",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.8",
-    "@storybook/testing-react": "^0.0.22",
     "@testing-library/dom": "^8.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@types/postcss-import": "^12.0.1",
     "@types/react": "17.0.20",
     "babel-jest": "^27.1.1",
     "babel-loader": "^8.2.2",
@@ -43,8 +30,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.1",
     "react-test-renderer": "^17.0.2",
-    "storybook": "^6.3.8",
-    "storybook-addon-mock": "^1.5.0",
     "typescript": "4.4.2"
   }
 }

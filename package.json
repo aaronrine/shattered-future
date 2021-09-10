@@ -10,7 +10,7 @@
     "test": "jest --watch",
     "test:all": "jest --watchAll",
     "test:cov": "jest --coverage",
-    "storybook": "start-storybook -p 6006 --ci",
+    "storybook": "start-storybook -p 6006 --ci --no-manager-cache",
     "storybook:build": "build-storybook"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "postcss": "^8.3.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "swr": "^1.0.0",
     "tailwindcss": "^2.2.14"
   },
   "devDependencies": {
@@ -43,6 +44,7 @@
     "jest": "^27.1.1",
     "react-test-renderer": "^17.0.2",
     "storybook": "^6.3.8",
+    "storybook-addon-mock": "^1.5.0",
     "typescript": "4.4.2"
   }
 }

@@ -13,6 +13,7 @@ module.exports = {
           implementation: require('postcss')
         }
       }
-    }
+    },
+    "storybook-addon-mock/register"
   ]
 }

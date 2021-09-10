@@ -1,7 +1,19 @@
 import type { NextPage } from "next";
+import { Comic } from "../components";
 
-export const HomePage: NextPage = () => {
-  return <div>hello</div>;
+const TEMP_DATA = {
+  pageNum: 2,
+  alt: "",
+  src: "",
+  desc: "",
 };
 
-export default HomePage;
+export const ComicPage: NextPage = () => {
+  return (
+    <div>
+      <Comic comic={TEMP_DATA} />
+    </div>
+  );
+};
+
+export default ComicPage;

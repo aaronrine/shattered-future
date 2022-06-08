@@ -7,6 +7,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Shattered Future | Home</title>
         <meta name="description" content="The official home of Shattered Future!" />
+        <meta charSet="utf-8" />
+        <meta name="author" content="Aaron Rine" />
+        <meta name="theme-color" media="(prefer-color-scheme: light)" content="#4285f4" />
+        <meta name="theme-color" media="(prefer-color-scheme: dark)" content="#4285f4" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

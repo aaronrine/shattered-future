@@ -1,0 +1,17 @@
+.Comics {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.thumbContainer {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+
+}
+
+.thumb {
+  object-fit: cover;
+}

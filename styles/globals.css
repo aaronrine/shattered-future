@@ -1,3 +1,16 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navLink {
+  text-decoration: none;
+  background-color: rgb(5, 125, 223);
+  padding-inline: 10px;
+  padding-block: 5px;
+  color: white;
+}
+
+.navLink + .navLink {
+  margin-inline-start: 20px;
 }

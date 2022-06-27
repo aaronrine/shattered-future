@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  flex: 1;
+  /* background-color: rgb(223, 121, 5); */
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  background-color: rgb(5, 125, 223);
+  padding-inline: 10px;
+  padding-block: 5px;
+  color: white;
+}

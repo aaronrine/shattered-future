@@ -1,0 +1,18 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Hero {
+  flex: 1;
+}
+
+.about {
+  max-width: 70ch;
+}
+
+.Main {
+  flex: 11;
+}
+
